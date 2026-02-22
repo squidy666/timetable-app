@@ -156,14 +156,26 @@ let editMode = false;
 // RENDERING
 // ============================================================
 
+function esc(s) {
+  return String(s ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function safeColor(c) {
+  return /^#[0-9a-fA-F]{3,6}$/.test(c) ? c : '#eeeeee';
+}
+
 function buildCell(cellData) {
   if (!cellData) return '';
-  const room = cellData.room ? ` ${cellData.room}` : '';
+  const room = cellData.room ? ` ${esc(cellData.room)}` : '';
   return `
-    <div class="subject-pill" style="background:${cellData.color || '#eee'}">
-      ${cellData.subject}
+    <div class="subject-pill" style="background:${safeColor(cellData.color)}">
+      ${esc(cellData.subject)}
     </div>
-    <div class="teacher-room">${cellData.teacher}${room}</div>
+    <div class="teacher-room">${esc(cellData.teacher)}${room}</div>
   `;
 }
 
@@ -240,7 +252,7 @@ function setEditMode(on) {
   editMode = on;
   document.body.classList.toggle('edit-mode', on);
   editToggle.textContent = on ? '🔓' : '🔒';
-  editToggle.setAttribute('aria-pressed', on);
+  editToggle.setAttribute('aria-pressed', String(on));
 }
 
 editToggle.addEventListener('click', () => setEditMode(!editMode));
@@ -341,7 +353,7 @@ document.getElementById('printBtn').addEventListener('click', () => {
 
 async function init() {
   document.getElementById('loadingMsg').style.display = 'block';
-  document.querySelector('.table-scroll').style.display = 'none';
+  document.getElementById('mainScroll').style.display = 'none';
 
   try {
     const ref = doc(db, 'timetable', 'data');
@@ -360,7 +372,7 @@ async function init() {
   renderAll();
 
   document.getElementById('loadingMsg').style.display = 'none';
-  document.querySelector('.table-scroll').style.display = '';
+  document.getElementById('mainScroll').style.display = '';
 }
 
 init();

@@ -288,7 +288,7 @@ dialog input[type="text"] {
 
   /* Show the static print containers instead of the live table */
   #timetable,
-  .table-scroll:has(#timetableBody) { display: none !important; }
+  #mainScroll { display: none !important; }
 
   .print-only-week { display: block !important; }
 
