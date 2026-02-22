@@ -55,6 +55,7 @@ const PALETTE = [
   '#f5f5f5', // grey
   '#fffde7', // cream
   '#faf3f8', // light salmon
+  '#a89d01'// gold
 ];
 
 // ============================================================
@@ -64,7 +65,7 @@ const PALETTE = [
 export const SEED_DATA = {
   weekA: {
     Mon: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E37',      color: '#faf3f8' },
       1:  { subject: '7MATD',     teacher: 'CRIC', room: 'D17',      color: '#d90d0d' },
       2:  { subject: '7WELD',     teacher: 'GARS', room: 'E37',      color: '#fffde7' },
       3:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#ffe600' },
@@ -72,23 +73,23 @@ export const SEED_DATA = {
       5:  { subject: '7SCI.D',    teacher: 'KATZ', room: 'E23',      color: '#0b24e4' },
     },
     Tue: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E37',      color: '#faf3f8' },
       1:  { subject: '7PED',      teacher: 'DAVC', room: 'CANTEEN1', color: '#225023' },
       2:  { subject: '7MUS.D',    teacher: 'MORM', room: 'H56',      color: '#bde8fc' },
       3:  { subject: '7SCI.D',    teacher: 'KATZ', room: 'E23',      color: '#0b24e4' },
       4:  { subject: '7TM5',      teacher: 'RABS', room: 'F52',      color: '#f8bbd0' },
-      5:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#80ab52' },
+      5:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#a89d01' },
     },
     Wed: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E37',      color: '#faf3f8' },
       1:  { subject: '7PDHD',     teacher: 'DAVC', room: 'G55',      color: '#76d576' },
       2:  { subject: '7MATD',     teacher: 'CRIC', room: 'D17',      color: '#d90d0d' },
       3:  { subject: '7TM5',      teacher: 'FIER', room: 'F52',      color: '#f8bbd0' },
-      4:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#80ab52' },
+      4:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#a89d01' },
       5:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#ffe600' },
     },
     Thu: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP',  room: 'E41',     color: '#faf3f8' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP',  room: 'E37',     color: '#faf3f8' },
       1:  { subject: '7ENG.D',    teacher: 'KRIR',  room: 'E33',     color: '#ffe600' },
       2:  { subject: '7SCI.D',    teacher: 'KATZ',  room: 'E23',     color: '#0b24e4' },
       3:  { subject: '7Assembly', teacher: 'HALL1', room: '',         color: '#f5f5f5' },
@@ -96,25 +97,25 @@ export const SEED_DATA = {
       5:  { subject: '7MATD',     teacher: 'CRIC',  room: 'D17',     color: '#d90d0d' },
     },
     Fri: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E37',      color: '#faf3f8' },
       1:  { subject: '7NSRD',     teacher: 'CAMN', room: 'E26',      color: '#e1bee7' },
       2:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#ffe600' },
       3:  { subject: '7MATD',     teacher: 'CRIC', room: 'D17',      color: '#d90d0d' },
-      4:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#80ab52' },
+      4:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#a89d01' },
       5:  { subject: '7PED',      teacher: 'DAVC', room: 'CANTEEN1', color: '#225023' },
     },
   },
   weekB: {
     Mon: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E37',      color: '#faf3f8' },
       1:  { subject: '7PDHD',     teacher: 'DAVC', room: 'G55',      color: '#76d576' },
       2:  { subject: '7MATD',     teacher: 'CRIC', room: 'D17',      color: '#d90d0d' },
-      3:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#80ab52' },
+      3:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#a89d01' },
       4:  { subject: '7SCI.D',    teacher: 'KATZ', room: 'E23',      color: '#0b24e4' },
       5:  { subject: '7TM5',      teacher: 'RABS', room: 'F52',      color: '#f8bbd0' },
     },
     Tue: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E37',      color: '#faf3f8' },
       1:  { subject: '7SCI.D',    teacher: 'KATZ', room: 'E23',      color: '#0b24e4' },
       2:  { subject: '7TM5',      teacher: 'RABS', room: 'F52',      color: '#f8bbd0' },
       3:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#ffe600' },
@@ -122,15 +123,15 @@ export const SEED_DATA = {
       5:  { subject: '7MUS.D',    teacher: 'MORM', room: 'H56',      color: '#bde8fc' },
     },
     Wed: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E37',      color: '#faf3f8' },
       1:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#ffe600' },
       2:  { subject: '7VIA5',     teacher: 'BILF', room: 'F46',      color: '#fa4081' },
       3:  { subject: '7PED',      teacher: 'DAVC', room: 'CANTEEN1', color: '#225023' },
       4:  { subject: '7TM5',      teacher: 'FIER', room: 'F49',      color: '#f8bbd0' },
-      5:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#80ab52' },
+      5:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#a89d01' },
     },
     Thu: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP',  room: 'E41',     color: '#faf3f8' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP',  room: 'E37',     color: '#faf3f8' },
       1:  { subject: '7SCI.D',    teacher: 'KATZ',  room: 'E23',     color: '#0b24e4' },
       2:  { subject: '7TM5',      teacher: 'RABS',  room: 'F52',     color: '#f8bbd0' },
       3:  { subject: '7Assembly', teacher: 'HALL1', room: '',         color: '#f5f5f5' },
@@ -138,9 +139,9 @@ export const SEED_DATA = {
       5:  { subject: '7MATD',     teacher: 'CRIC',  room: 'D17',     color: '#d90d0d' },
     },
     Fri: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E37',      color: '#faf3f8' },
       1:  { subject: '7MATD',     teacher: 'CRIC', room: 'D17',      color: '#d90d0d' },
-      2:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#80ab52' },
+      2:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#a89d01' },
       3:  { subject: '7SCI.D',    teacher: 'KATZ', room: 'E23',      color: '#0b24e4' },
       4:  { subject: '7MUS.D',    teacher: 'MORM', room: 'H56',      color: '#bde8fc' },
       5:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#ffe600' },
