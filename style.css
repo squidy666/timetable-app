@@ -110,7 +110,7 @@ main { padding: 0.5rem; }
 table {
   border-collapse: collapse;
   width: 100%;
-  min-width: 500px;
+  min-width: 620px;
   background: var(--surface);
   font-size: 0.82rem;
 }
@@ -145,7 +145,7 @@ td {
   border: 1px solid var(--border);
   padding: 0;
   vertical-align: top;
-  min-width: 90px;
+  min-width: 110px;
 }
 
 td.row-label {
@@ -168,27 +168,47 @@ tr.break-row .row-label {
   background: var(--break-bg);
 }
 
+/* ===== RC / R / L rows — must come after break-row to win on equal specificity ===== */
+tr[data-row-key="RC"] td, tr[data-row-key="RC"] .row-label,
+tr[data-row-key="R"] td,  tr[data-row-key="R"] .row-label,
+tr[data-row-key="L"] td,  tr[data-row-key="L"] .row-label { background: #faf3f8; }
+
 /* ===== Class cells ===== */
 .class-cell {
-  padding: 3px 4px;
+  padding: 4px 5px;
   cursor: default;
+  vertical-align: middle;
   transition: outline 0.1s;
 }
 
-.subject-pill {
-  display: inline-block;
-  padding: 2px 5px;
-  border-radius: 3px;
-  font-size: 0.72rem;
-  font-weight: 700;
+.class-pill {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
   white-space: nowrap;
-  margin-bottom: 2px;
+  max-width: 100%;
 }
 
-.teacher-room {
-  font-size: 0.7rem;
-  color: var(--text-muted);
-  white-space: nowrap;
+.pill-subject {
+  padding: 3px 8px;
+  font-weight: 700;
+  font-size: 0.78rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+}
+
+.pill-detail {
+  padding: 3px 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
 }
 
 /* ===== Edit mode ===== */
@@ -337,17 +357,19 @@ dialog input[type="text"] {
 
   tr.break-row td { height: 4mm; }
 
-  .class-cell { padding: 1mm; }
+  .class-cell { padding: 1mm; vertical-align: middle; }
 
-  .subject-pill {
-    font-size: 6pt;
-    padding: 0.5mm 1mm;
-    margin-bottom: 0.5mm;
+  .class-pill {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
-  .teacher-room { font-size: 5.5pt; }
+  .pill-subject {
+    font-size: 6pt;
+    padding: 0.5mm 1.5mm;
+  }
+
+  .pill-detail { font-size: 5.5pt; padding: 0.5mm 1.5mm; }
 
   /* Keep both weeks on one page if possible */
   .print-only-week { page-break-inside: avoid; }

@@ -39,18 +39,22 @@ const ROWS = [
 ];
 
 const PALETTE = [
-  '#ffcdd2', // red
+  '#d90d0d', // red
   '#ffe0b2', // orange
-  '#fff9c4', // yellow
-  '#c8e6c9', // green
-  '#b3e5fc', // light blue
-  '#bbdefb', // blue
-  '#d1c4e9', // purple
-  '#f8bbd0', // pink
+  '#ffe600', // yellow
+  '#225023', // green
+  '#bde8fc', // light blue
+  '#0b24e4', // blue
+  '#c5a5ff', // purple
+  '#fa4081', // pink
+  '#ffc0cb', // light pink
+  '#76d576', // light green
+  '#80ab52', // olive
   '#dcedc8', // lime
   '#b2dfdb', // teal
   '#f5f5f5', // grey
   '#fffde7', // cream
+  '#faf3f8', // light salmon
 ];
 
 // ============================================================
@@ -60,86 +64,86 @@ const PALETTE = [
 export const SEED_DATA = {
   weekA: {
     Mon: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#fffde7' },
-      1:  { subject: '7MATD',     teacher: 'CRIC', room: 'D17',      color: '#ffcdd2' },
-      2:  { subject: '7WELD',     teacher: 'GARS', room: 'E37',      color: '#b3e5fc' },
-      3:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#c8e6c9' },
-      4:  { subject: '7VIA5',     teacher: 'BILF', room: 'F46',      color: '#d1c4e9' },
-      5:  { subject: '7SCI.D',    teacher: 'KATZ', room: 'E23',      color: '#bbdefb' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
+      1:  { subject: '7MATD',     teacher: 'CRIC', room: 'D17',      color: '#d90d0d' },
+      2:  { subject: '7WELD',     teacher: 'GARS', room: 'E37',      color: '#fffde7' },
+      3:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#ffe600' },
+      4:  { subject: '7VIA5',     teacher: 'BILF', room: 'F46',      color: '#fa4081' },
+      5:  { subject: '7SCI.D',    teacher: 'KATZ', room: 'E23',      color: '#0b24e4' },
     },
     Tue: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#fffde7' },
-      1:  { subject: '7PED',      teacher: 'DAVC', room: 'CANTEEN1', color: '#b2dfdb' },
-      2:  { subject: '7MUS.D',    teacher: 'MORM', room: 'H56',      color: '#dcedc8' },
-      3:  { subject: '7SCI.D',    teacher: 'KATZ', room: 'E23',      color: '#bbdefb' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
+      1:  { subject: '7PED',      teacher: 'DAVC', room: 'CANTEEN1', color: '#225023' },
+      2:  { subject: '7MUS.D',    teacher: 'MORM', room: 'H56',      color: '#bde8fc' },
+      3:  { subject: '7SCI.D',    teacher: 'KATZ', room: 'E23',      color: '#0b24e4' },
       4:  { subject: '7TM5',      teacher: 'RABS', room: 'F52',      color: '#f8bbd0' },
-      5:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#ffe0b2' },
+      5:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#80ab52' },
     },
     Wed: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#fffde7' },
-      1:  { subject: '7PDHD',     teacher: 'DAVC', room: 'G55',      color: '#c5cae9' },
-      2:  { subject: '7MATD',     teacher: 'CRIC', room: 'D17',      color: '#ffcdd2' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
+      1:  { subject: '7PDHD',     teacher: 'DAVC', room: 'G55',      color: '#76d576' },
+      2:  { subject: '7MATD',     teacher: 'CRIC', room: 'D17',      color: '#d90d0d' },
       3:  { subject: '7TM5',      teacher: 'FIER', room: 'F52',      color: '#f8bbd0' },
-      4:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#ffe0b2' },
-      5:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#c8e6c9' },
+      4:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#80ab52' },
+      5:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#ffe600' },
     },
     Thu: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP',  room: 'E41',     color: '#fffde7' },
-      1:  { subject: '7ENG.D',    teacher: 'KRIR',  room: 'E33',     color: '#c8e6c9' },
-      2:  { subject: '7SCI.D',    teacher: 'KATZ',  room: 'E23',     color: '#bbdefb' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP',  room: 'E41',     color: '#faf3f8' },
+      1:  { subject: '7ENG.D',    teacher: 'KRIR',  room: 'E33',     color: '#ffe600' },
+      2:  { subject: '7SCI.D',    teacher: 'KATZ',  room: 'E23',     color: '#0b24e4' },
       3:  { subject: '7Assembly', teacher: 'HALL1', room: '',         color: '#f5f5f5' },
-      4:  { subject: '7SP4',      teacher: 'PERJ',  room: 'G54',     color: '#c8e6c9' },
-      5:  { subject: '7MATD',     teacher: 'CRIC',  room: 'D17',     color: '#ffcdd2' },
+      4:  { subject: '7SP4',      teacher: 'PERJ',  room: 'G54',     color: '#225023' },
+      5:  { subject: '7MATD',     teacher: 'CRIC',  room: 'D17',     color: '#d90d0d' },
     },
     Fri: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#fffde7' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
       1:  { subject: '7NSRD',     teacher: 'CAMN', room: 'E26',      color: '#e1bee7' },
-      2:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#c8e6c9' },
-      3:  { subject: '7MATD',     teacher: 'CRIC', room: 'D17',      color: '#ffcdd2' },
-      4:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#ffe0b2' },
-      5:  { subject: '7PED',      teacher: 'DAVC', room: 'CANTEEN1', color: '#b2dfdb' },
+      2:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#ffe600' },
+      3:  { subject: '7MATD',     teacher: 'CRIC', room: 'D17',      color: '#d90d0d' },
+      4:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#80ab52' },
+      5:  { subject: '7PED',      teacher: 'DAVC', room: 'CANTEEN1', color: '#225023' },
     },
   },
   weekB: {
     Mon: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#fffde7' },
-      1:  { subject: '7PDHD',     teacher: 'DAVC', room: 'G55',      color: '#c5cae9' },
-      2:  { subject: '7MATD',     teacher: 'CRIC', room: 'D17',      color: '#ffcdd2' },
-      3:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#ffe0b2' },
-      4:  { subject: '7SCI.D',    teacher: 'KATZ', room: 'E23',      color: '#bbdefb' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
+      1:  { subject: '7PDHD',     teacher: 'DAVC', room: 'G55',      color: '#76d576' },
+      2:  { subject: '7MATD',     teacher: 'CRIC', room: 'D17',      color: '#d90d0d' },
+      3:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#80ab52' },
+      4:  { subject: '7SCI.D',    teacher: 'KATZ', room: 'E23',      color: '#0b24e4' },
       5:  { subject: '7TM5',      teacher: 'RABS', room: 'F52',      color: '#f8bbd0' },
     },
     Tue: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#fffde7' },
-      1:  { subject: '7SCI.D',    teacher: 'KATZ', room: 'E23',      color: '#bbdefb' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
+      1:  { subject: '7SCI.D',    teacher: 'KATZ', room: 'E23',      color: '#0b24e4' },
       2:  { subject: '7TM5',      teacher: 'RABS', room: 'F52',      color: '#f8bbd0' },
-      3:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#c8e6c9' },
-      4:  { subject: '7VIA5',     teacher: 'BILF', room: 'F46',      color: '#d1c4e9' },
-      5:  { subject: '7MUS.D',    teacher: 'MORM', room: 'H56',      color: '#dcedc8' },
+      3:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#ffe600' },
+      4:  { subject: '7VIA5',     teacher: 'BILF', room: 'F46',      color: '#fa4081' },
+      5:  { subject: '7MUS.D',    teacher: 'MORM', room: 'H56',      color: '#bde8fc' },
     },
     Wed: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#fffde7' },
-      1:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#c8e6c9' },
-      2:  { subject: '7VIA5',     teacher: 'BILF', room: 'F46',      color: '#d1c4e9' },
-      3:  { subject: '7PED',      teacher: 'DAVC', room: 'CANTEEN1', color: '#b2dfdb' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
+      1:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#ffe600' },
+      2:  { subject: '7VIA5',     teacher: 'BILF', room: 'F46',      color: '#fa4081' },
+      3:  { subject: '7PED',      teacher: 'DAVC', room: 'CANTEEN1', color: '#225023' },
       4:  { subject: '7TM5',      teacher: 'FIER', room: 'F49',      color: '#f8bbd0' },
-      5:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#ffe0b2' },
+      5:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#80ab52' },
     },
     Thu: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP',  room: 'E41',     color: '#fffde7' },
-      1:  { subject: '7SCI.D',    teacher: 'KATZ',  room: 'E23',     color: '#bbdefb' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP',  room: 'E41',     color: '#faf3f8' },
+      1:  { subject: '7SCI.D',    teacher: 'KATZ',  room: 'E23',     color: '#0b24e4' },
       2:  { subject: '7TM5',      teacher: 'RABS',  room: 'F52',     color: '#f8bbd0' },
       3:  { subject: '7Assembly', teacher: 'HALL1', room: '',         color: '#f5f5f5' },
-      4:  { subject: '7SP4',      teacher: 'PERJ',  room: 'G54',     color: '#c8e6c9' },
-      5:  { subject: '7MATD',     teacher: 'CRIC',  room: 'D17',     color: '#ffcdd2' },
+      4:  { subject: '7SP4',      teacher: 'PERJ',  room: 'G54',     color: '#225023' },
+      5:  { subject: '7MATD',     teacher: 'CRIC',  room: 'D17',     color: '#d90d0d' },
     },
     Fri: {
-      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#fffde7' },
-      1:  { subject: '7MATD',     teacher: 'CRIC', room: 'D17',      color: '#ffcdd2' },
-      2:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#ffe0b2' },
-      3:  { subject: '7SCI.D',    teacher: 'KATZ', room: 'E23',      color: '#bbdefb' },
-      4:  { subject: '7MUS.D',    teacher: 'MORM', room: 'H56',      color: '#dcedc8' },
-      5:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#c8e6c9' },
+      RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#faf3f8' },
+      1:  { subject: '7MATD',     teacher: 'CRIC', room: 'D17',      color: '#d90d0d' },
+      2:  { subject: '7HSID',     teacher: 'JOHC', room: 'E27',      color: '#80ab52' },
+      3:  { subject: '7SCI.D',    teacher: 'KATZ', room: 'E23',      color: '#0b24e4' },
+      4:  { subject: '7MUS.D',    teacher: 'MORM', room: 'H56',      color: '#bde8fc' },
+      5:  { subject: '7ENG.D',    teacher: 'KRIR', room: 'E33',      color: '#ffe600' },
     },
   },
 };
@@ -168,15 +172,24 @@ function safeColor(c) {
   return /^#[0-9a-fA-F]{3,6}$/.test(c) ? c : '#eeeeee';
 }
 
+function isDark(hex) {
+  let h = hex.replace('#', '');
+  if (h.length === 3) h = h.split('').map(c => c + c).join('');
+  const r = parseInt(h.slice(0, 2), 16);
+  const g = parseInt(h.slice(2, 4), 16);
+  const b = parseInt(h.slice(4, 6), 16);
+  return (0.299 * r + 0.587 * g + 0.114 * b) < 140;
+}
+
 function buildCell(cellData) {
   if (!cellData) return '';
-  const room = cellData.room ? ` ${esc(cellData.room)}` : '';
-  return `
-    <div class="subject-pill" style="background:${safeColor(cellData.color)}">
-      ${esc(cellData.subject)}
-    </div>
-    <div class="teacher-room">${esc(cellData.teacher)}${room}</div>
-  `;
+  const subj   = esc(cellData.subject);
+  const teacher = esc(cellData.teacher);
+  const room   = cellData.room ? esc(cellData.room) : '';
+  const detail = [teacher, room].filter(Boolean).join('\u00a0\u00a0');
+  const bg     = safeColor(cellData.color);
+  const tc     = isDark(bg) ? '#fff' : '#111';
+  return `<div class="class-pill" style="border-color:${bg}"><span class="pill-subject" style="background:${bg};color:${tc}">${subj}</span><span class="pill-detail">${detail}</span></div>`;
 }
 
 function renderRows(tbodyEl, weekKey) {
@@ -185,7 +198,9 @@ function renderRows(tbodyEl, weekKey) {
 
   for (const row of ROWS) {
     const tr = document.createElement('tr');
+    tr.dataset.rowKey = row.key;
     if (row.isBreak) tr.classList.add('break-row');
+    if (row.key === 'RC') tr.classList.add('rc-row');
 
     const labelTd = document.createElement('td');
     labelTd.className = 'row-label';
