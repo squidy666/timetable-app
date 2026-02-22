@@ -7,12 +7,12 @@ import { getFirestore, doc, getDoc, setDoc }
   from 'https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js';
 
 const firebaseConfig = {
-  apiKey: "REPLACE_ME",
-  authDomain: "REPLACE_ME.firebaseapp.com",
-  projectId: "REPLACE_ME",
-  storageBucket: "REPLACE_ME.appspot.com",
-  messagingSenderId: "REPLACE_ME",
-  appId: "REPLACE_ME"
+  apiKey: "AIzaSyAss8KeWk8nzhjrqyKr3EGd--xdP_Y785Y",
+  authDomain: "timetable-app-6844e.firebaseapp.com",
+  projectId: "timetable-app-6844e",
+  storageBucket: "timetable-app-6844e.firebasestorage.app",
+  messagingSenderId: "927432078965",
+  appId: "1:927432078965:web:3918807e7e9cd50ff82a3c"
 };
 
 const app = initializeApp(firebaseConfig);
