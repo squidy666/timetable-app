@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Timetable</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Timetable</h1>
+    <div class="controls">
+      <div class="week-tabs" role="tablist">
+        <button class="tab active" data-week="A" role="tab" aria-selected="true">Week A</button>
+        <button class="tab" data-week="B" role="tab" aria-selected="false">Week B</button>
+      </div>
+      <button id="editToggle" class="icon-btn" title="Toggle edit mode" aria-pressed="false">🔒</button>
+      <button id="printBtn" class="icon-btn" title="Print timetable">🖨️</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="print-note" id="printNote">
+      Tip: Enable <strong>Background Graphics</strong> in print settings to preserve subject colours.
+    </div>
+
+    <div id="loadingMsg" style="text-align:center; padding: 2rem; color: #888;">
+      Loading timetable…
+    </div>
+
+    <div class="table-scroll">
+      <table id="timetable" aria-label="School timetable">
+        <thead>
+          <tr>
+            <th class="row-label-head"></th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+          </tr>
+        </thead>
+        <tbody id="timetableBody">
+          <!-- Rows injected by app.js -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Both weeks rendered for print; visibility controlled by JS/CSS -->
+    <div class="print-only-week" id="printWeekA">
+      <h2 class="print-week-label">Week A</h2>
+      <div class="table-scroll">
+        <table aria-label="Week A timetable">
+          <thead>
+            <tr>
+              <th class="row-label-head"></th>
+              <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th>
+            </tr>
+          </thead>
+          <tbody id="printBodyA"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="print-only-week" id="printWeekB">
+      <h2 class="print-week-label">Week B</h2>
+      <div class="table-scroll">
+        <table aria-label="Week B timetable">
+          <thead>
+            <tr>
+              <th class="row-label-head"></th>
+              <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th>
+            </tr>
+          </thead>
+          <tbody id="printBodyB"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- Edit popover -->
+  <dialog id="editDialog" aria-label="Edit class">
+    <form method="dialog" id="editForm">
+      <h2>Edit Class</h2>
+      <label>Subject <input type="text" id="editSubject" /></label>
+      <label>Teacher <input type="text" id="editTeacher" /></label>
+      <label>Room    <input type="text" id="editRoom" /></label>
+      <label>Colour</label>
+      <div class="color-swatches" id="colorSwatches"></div>
+      <div class="dialog-actions">
+        <button type="submit" id="saveCell">Save</button>
+        <button type="button" id="cancelEdit">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
