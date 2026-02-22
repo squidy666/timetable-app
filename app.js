@@ -57,7 +57,7 @@ const PALETTE = [
 // SEED DATA — full timetable from the photo
 // ============================================================
 
-const SEED_DATA = {
+export const SEED_DATA = {
   weekA: {
     Mon: {
       RC: { subject: '7Fitzroy1', teacher: 'LEEP', room: 'E41',      color: '#fffde7' },
@@ -193,7 +193,10 @@ function renderRows(tbodyEl, weekKey) {
         td.dataset.row  = row.key;
         const cell = weekData[day]?.[row.key];
         td.innerHTML = buildCell(cell);
-        td.addEventListener('click', () => onCellClick(td, cell));
+        td.addEventListener('click', () => {
+          const currentCell = timetableData[weekKey]?.[day]?.[row.key];
+          onCellClick(td, currentCell);
+        });
         tr.appendChild(td);
       }
     }
